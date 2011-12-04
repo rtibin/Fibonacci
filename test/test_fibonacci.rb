@@ -17,4 +17,13 @@ class TestFibonacci < Test::Unit::TestCase
   should "closest to 10 is 8" do
     assert_equal(8, 10.closest_fibanachi)
   end
+
+  should "not fail" do
+    assert_equal(0, -10.closest_fibanachi)
+  end
+
+  should "stress test" do
+    assert_equal(9227465, 10000000.closest_fibanachi)
+  end
+
 end
