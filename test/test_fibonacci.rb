@@ -14,6 +14,14 @@ class TestFibonacci < Test::Unit::TestCase
     assert_equal(1, 1.closest_fibanachi)
   end
 
+  should "test 156" do
+    assert_equal(144, 156.closest_fibanachi)
+  end
+
+  should "test 99" do
+    assert_equal(89, 99.closest_fibanachi)
+  end
+
   should "closest to 10 is 8" do
     assert_equal(8, 10.closest_fibanachi)
   end
